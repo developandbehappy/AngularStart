@@ -1,3 +1,4 @@
 var vkApp = angular.module('vkApp', [
-  'ngRoute'
+  'ngRoute',
+  'pascalprecht.translate'
 ]);
