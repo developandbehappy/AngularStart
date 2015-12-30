@@ -1,18 +1,14 @@
 vkApp.config(['$translateProvider', function ($translateProvider) {
   $translateProvider.translations('en', {
-    'TITLE': 'Hello',
-    'FOO': 'This is a paragraph'
-  });
-
-  $translateProvider.translations('de', {
-    'TITLE': 'Hallo',
-    'FOO': 'Dies ist ein Absatz'
+    'ABOUT_TITLE': 'About us',
+    'HOME_TITLE': 'Home'
   });
 
   $translateProvider.translations('ru', {
-    'TITLE': 'Привет',
-    'FOO': 'Это параграф'
+    'ABOUT_TITLE': 'О нас',
+    'HOME_TITLE': 'Домой'
   });
 
-  $translateProvider.preferredLanguage('ru');
+  $translateProvider.preferredLanguage('en');
+  $translateProvider.useStorage('translateStorage');
 }]);
